@@ -24,14 +24,7 @@ function getContent($id){
         	'return'=>json
            )
         );
-        
-    //$content = html_entity_decode(strip_tags($parentsContent.$resourcesContent));
-
-
        preg_match("/<form(.*)<\/form>/sU",$resourcesContent,$badcontent);
-    //   echo "<pre>";
-    //   print_r()
-    //   echo "</pre>";
        if($badcontent){
             $clear_badcontent = json_encode($badcontent[0]);
             $clear_badcontent = trim($clear_badcontent, '"');

@@ -1,8 +1,5 @@
 <?php
 header("Content-type:application/json");
-ini_set('error_reporting', E_ALL);
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
 /*авторизация json-клиента*/
 if($_SERVER['HTTP_AUTHORIZATIONAPI'] != 'your_key'){
     $output['message'] = 'Ошибка авторизации json-клиента';

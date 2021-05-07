@@ -189,15 +189,7 @@ function getContent($id){
         }
         
         $content = json_encode($content);
-        
-        
-
         return $content;
-
-    /*if($typeEncode=='json'){
-        header("Content-type:application/json");
-        exit;
-    }*/
 }
 
 /*получаем данные главной страницы*/
